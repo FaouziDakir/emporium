@@ -1,0 +1,23 @@
+{
+  "name": "js_projet_web",
+  "version": "1.0.0",
+  "description": "- Reproduire l'image en HTML/CSS\r - Au clique du bouton Connection un modal s'ouvre avec une petite navigation et un contenu qui change selon le choix\r   - Connexion **\"button de nav du modal\"**\r     - Email \r     - Mot de pass \r   - Inscription **\"button de nav du modal\"**\r     - Nom \r     - Prenom\r     - Age\r     - Email\r     - Mot de pass \r - Au scroll la navbar se collapse\r - A côté du bouton **\"Connexion\"** deux carrés l'un noir et l'un black qui permetront de changer le theme du site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bricojack79/emporium.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bricojack79/emporium/issues"
+  },
+  "homepage": "https://github.com/bricojack79/emporium#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
+}
