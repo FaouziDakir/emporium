@@ -5687,6 +5687,9 @@ readers do not read off random characters that represent icons */
   #section-un h1 {
     font-size: 40px;
   }
+  nav a {
+    font-size: 10px;
+  }
 }
 
 #section-deux img {
@@ -5753,6 +5756,26 @@ readers do not read off random characters that represent icons */
 
 #section-six i {
   font-size: 30px;
+}
+
+#section-sept {
+  background-color: #212121;
+}
+
+#section-sept h3 {
+  font-size: 13px;
+}
+
+#section-sept a {
+  text-decoration: none;
+}
+
+#section-sept li {
+  color: #6c757d;
+}
+
+#section-sept li a {
+  color: #6c757d;
 }
 
 .bg-blanc {
