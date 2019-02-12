@@ -5688,7 +5688,10 @@ readers do not read off random characters that represent icons */
     font-size: 40px;
   }
   nav a {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  #section-sept div {
+    border: none !important;
   }
 }
 
@@ -5739,7 +5742,7 @@ readers do not read off random characters that represent icons */
   background-size: cover;
 }
 
-#section-quatre h1, #section-quatre button {
+#section-quatre #parallax-content {
   color: white;
   position: absolute;
   top: 50%;
@@ -5770,12 +5773,31 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
+#section-sept button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
 #section-sept li {
   color: #6c757d;
 }
 
 #section-sept li a {
   color: #6c757d;
+}
+
+footer {
+  background-color: #0a0a0a;
+  height: 80px;
+  position: relative;
+}
+
+footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .bg-blanc {
