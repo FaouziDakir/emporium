@@ -7,17 +7,14 @@
     <title>Document</title>
     <script src="./src/js/index.js" type="module"></script>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
   <h1 class="text-center mt-5"><strong>emporium.</strong></h1>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+  <nav class="navbar navbar-expand navbar-light bg-white">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav d-block d-md-flex mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -42,6 +39,22 @@
         </form>
       </div>
     </nav>
+
+    <section id="section-un">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mt-5 pt-5">
+            <h2 class="text-danger">Shop at </h2><h1 class="display-1"><strong>emporium</strong></h1>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsam unde sapiente aliquid alias quo
+               cumque saepe delectus modi. Hic magnam vero nulla accusantium sit nemo? Natus rem dolore odit.</p>
+            <button type="button" class="btn btn-danger">Danger</button>
+          </div>
+          <div class="col-6">
+            <img class='img-fluid' src="./public/images/slider-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
     
   </body>
 </html>

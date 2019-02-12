@@ -1,0 +1,13 @@
+#section-un {
+  background-color: #F3F3F3;
+}
+
+@media (max-width: 576px) {
+  #section-un p {
+    font-size: 10px;
+  }
+  #section-un h1 {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
