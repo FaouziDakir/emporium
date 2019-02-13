@@ -5680,11 +5680,21 @@ readers do not read off random characters that represent icons */
   background-color: #F3F3F3;
 }
 
+nav {
+  position: relative;
+}
+
+nav form {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @media (max-width: 576px) {
   #section-un p {
     font-size: 10px;
   }
-  #section-un h1 {
+  #section-un h2 {
     font-size: 40px;
   }
   nav a {
@@ -5728,7 +5738,6 @@ readers do not read off random characters that represent icons */
 }
 
 #section-trois p {
-  color: #bd584e;
   font-weight: bold;
 }
 
@@ -5808,7 +5817,33 @@ footer p {
   background-color: #bd584e;
 }
 
+.bg-noir {
+  background-color: #212121 !important;
+  -webkit-transition-duration: 1s !important;
+          transition-duration: 1s !important;
+}
+
+.text-blanc {
+  color: #E5E5E5 !important;
+  -webkit-transition-duration: 2s !important;
+          transition-duration: 2s !important;
+}
+
 .taille {
   height: 400px;
+}
+
+.old-price {
+  color: #949494;
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: #bd584e;
+}
+
+body {
+  -webkit-transition-duration: 1s !important;
+          transition-duration: 1s !important;
 }
 /*# sourceMappingURL=style.css.map */

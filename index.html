@@ -7,6 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/carousel.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </head>
 <body>
   <h1 class="text-center mt-5"><strong>emporium.</strong></h1>
@@ -14,26 +21,29 @@
   <nav class="navbar navbar-expand navbar-light bg-white">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav d-block d-md-flex mx-auto">
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="#">Product</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="#">Blog</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="#">Elements</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="#">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-light border border-secondary p-2 mx-1"></button>
+            <button type="button" class="btn btn-dark border border-dark p-2 mx-1"></button>
+
             <button class="btn btn-secondary">Connection</button>
         </form>
       </div>
@@ -43,7 +53,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6 mt-5 pt-5">
-            <h2 class="text-danger">Shop at </h2><h1 class="display-1"><strong>emporium</strong></h1>
+            <h2 class="text-danger">Shop at </h2><h2 class="display-1"><strong>emporium</strong></h2>
             <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsam unde sapiente aliquid alias quo
                cumque saepe delectus modi. Hic magnam vero nulla accusantium sit nemo? Natus rem dolore odit.</p>
             <button type="button" class="btn btn-danger">Danger</button>
@@ -72,17 +82,17 @@
           <div class="col-12 col-lg-4">
             <img class="img-thumbnail" src="./public/images/products_mini/product-luxry-sofa.jpg" alt="">
             <a href="">Luxury Sofa</a>
-            <p>$600</p>
+            <p class="new-price">$600</p>
           </div>
           <div class="col-12 col-lg-4">
             <img class="img-thumbnail" src="./public/images/products_mini/product-gloves.jpg" alt="">
             <a href="">Leather Gloves</a>
-            <p>$34.00</p>
+            <p><span class="old-price">$34.00</span><span class="new-price">$27.00</span></p>
           </div>
           <div class="col-12 col-lg-4">
             <img class="img-thumbnail" src="./public/images/products_mini/product-cups.jpg" alt="">
             <a href="">Colorful Bowl</a>
-            <p>$18.00</p>
+            <p class="new-price">$18.00</p>
           </div>
         </div>
 
@@ -90,35 +100,37 @@
             <div class="col-12 col-lg-4">
               <img class="img-thumbnail" src="./public/images/products_mini/product-bag.jpg" alt="">
               <a href="">Women Bag</a>
-              <p>$350</p>
+              <div class="">
+                <p><span class="old-price">$420.00</span><span class="new-price">$350</span></p>
+              </div>
             </div>
             <div class="col-12 col-lg-4">
               <img class="img-thumbnail" src="./public/images/products_mini/product-tshitr.jpg" alt="">
               <a href="">Minimal T-Shirt</a>
-              <p>$15.00</p>
+              <p class="new-price">$15.00</p>
             </div>
             <div class="col-12 col-lg-4">
               <img class="img-thumbnail" src="./public/images/products_mini/product-plates.jpg" alt="">
               <a href="">Plates Set</a>
-              <p>$30.00</p>
+              <p class="new-price">$30.00</p>
             </div>
           </div>
 
-          <div class="row mt-5">
+          <div class="row my-5">
               <div class="col-12 col-lg-4">
                 <img class="img-thumbnail" src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
                 <a href="">Modern Sofa</a>
-                <p>$900</p>
+                <p class="new-price">$900</p>
               </div>
               <div class="col-12 col-lg-4">
                 <img class="img-thumbnail" src="./public/images/products_mini/product-bed.jpg" alt="">
                 <a href="">Bed Linen</a>
-                <p>$79.00</p>
+                <p class="new-price">$79.00</p>
               </div>
               <div class="col-12 col-lg-4">
                 <img class="img-thumbnail" src="./public/images/products_mini/product-shoes.jpg" alt="">
                 <a href="">Minimal Shoes</a>
-                <p>$60.00</p>
+                <p class="new-price">$60.00</p>
               </div>
             </div>
       </div>
@@ -133,7 +145,59 @@
 
     <section id="section-cinq">
       <h1 class="text-center mt-5">Hot Fashion Products</h1>
-     <!-- CAROUSEL -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products/product-tshitr-white-700x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products/product-bag-2-700x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products/product-jacket-700x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products/product-shoes-700x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products/product-tshitr-700x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products/product-bag-700x500.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-col">
+                            <img width='160' height='115' src="./public/images/products_mini/product-gloves.jpg" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+          </div>  
+        </div>
+      </div>
     </section>
 
     <section id="section-six">

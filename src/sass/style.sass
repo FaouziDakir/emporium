@@ -7,11 +7,20 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts"
 #section-un
     background-color: #F3F3F3
 
+nav
+    position: relative
+    form
+        position: absolute
+        top: 0
+        right: 0
+
+
+
 @media (max-width: 576px)
     #section-un
         p
             font-size: 10px
-        h1
+        h2
             font-size: 40px
     nav
         a
@@ -44,8 +53,7 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts"
         font-weight: bold
         font-size: 15px
         text-decoration: none
-    p 
-        color: #bd584e
+    p
         font-weight: bold
 
 #section-quatre
@@ -96,14 +104,28 @@ footer
         transform: translate(-50%,-50%)
 
 
-
-    
-
 .bg-blanc
     background-color: #f3f3f3
 
 .bg-rouge
     background-color: #bd584e
+.bg-noir
+    background-color: #212121 !important
+    transition-duration: 1s !important
+
+.text-blanc
+    color: #E5E5E5 !important
+    transition-duration: 2s !important
 
 .taille 
     height: 400px
+
+.old-price
+    color: #949494
+    text-decoration: line-through
+
+.new-price
+    color: #bd584e
+    
+body
+    transition-duration: 1s !important
