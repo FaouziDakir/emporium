@@ -4,6 +4,14 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts"
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss'
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss'
 
+*
+    font-family: 'Poppins', sans-serif
+
+body
+    transition-duration: 1s !important
+nav
+    transition-duration: 1s !important
+
 #section-un
     background-color: #F3F3F3
 
@@ -13,8 +21,6 @@ nav
         position: absolute
         top: 0
         right: 0
-
-
 
 @media (max-width: 576px)
     #section-un
@@ -46,6 +52,11 @@ nav
 #section-trois
     img
         border: none
+        overflow: hidden
+        width: 100%
+        display: block
+        margin: auto
+        transition-duration: .4s
     div 
         text-align: center
     a
@@ -55,6 +66,20 @@ nav
         text-decoration: none
     p
         font-weight: bold
+    .wrapper
+        position: relative
+        overflow: hidden
+        .row
+            position: absolute
+            bottom: -40%
+            transition-duration: .4s
+            opacity: 0.9
+        &:hover
+            .row
+                bottom: 0%
+        img:hover
+            transform: scale(1.2)
+
 
 #section-quatre
     position: relative
@@ -115,7 +140,7 @@ footer
 
 .text-blanc
     color: #E5E5E5 !important
-    transition-duration: 2s !important
+    transition-duration: 1s !important
 
 .taille 
     height: 400px
@@ -126,6 +151,19 @@ footer
 
 .new-price
     color: #bd584e
-    
-body
-    transition-duration: 1s !important
+
+.sale
+    position: static
+    display: inline-block
+    vertical-align: middle
+    margin-right: 20px
+    background-color: #bd584e
+    border-radius: 100%
+    min-height: 3.236em
+    min-width: 3.236em
+
+.sticky 
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 3

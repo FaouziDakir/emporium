@@ -5676,6 +5676,20 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
 }
 
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  -webkit-transition-duration: 1s !important;
+          transition-duration: 1s !important;
+}
+
+nav {
+  -webkit-transition-duration: 1s !important;
+          transition-duration: 1s !important;
+}
+
 #section-un {
   background-color: #F3F3F3;
 }
@@ -5724,6 +5738,12 @@ nav form {
 
 #section-trois img {
   border: none;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  margin: auto;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
 }
 
 #section-trois div {
@@ -5739,6 +5759,28 @@ nav form {
 
 #section-trois p {
   font-weight: bold;
+}
+
+#section-trois .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#section-trois .wrapper .row {
+  position: absolute;
+  bottom: -40%;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  opacity: 0.9;
+}
+
+#section-trois .wrapper:hover .row {
+  bottom: 0%;
+}
+
+#section-trois .wrapper img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #section-quatre {
@@ -5825,8 +5867,8 @@ footer p {
 
 .text-blanc {
   color: #E5E5E5 !important;
-  -webkit-transition-duration: 2s !important;
-          transition-duration: 2s !important;
+  -webkit-transition-duration: 1s !important;
+          transition-duration: 1s !important;
 }
 
 .taille {
@@ -5842,8 +5884,21 @@ footer p {
   color: #bd584e;
 }
 
-body {
-  -webkit-transition-duration: 1s !important;
-          transition-duration: 1s !important;
+.sale {
+  position: static;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  background-color: #bd584e;
+  border-radius: 100%;
+  min-height: 3.236em;
+  min-width: 3.236em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
 /*# sourceMappingURL=style.css.map */

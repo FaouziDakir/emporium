@@ -14,11 +14,13 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 </head>
 <body>
   <h1 class="text-center mt-5"><strong>emporium.</strong></h1>
 
-  <nav class="navbar navbar-expand navbar-light bg-white">
+  <nav id="navbar" class="navbar navbar-expand navbar-light bg-white py-2">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav d-block d-md-flex mx-auto">
           <li class="nav-item mr-4">
@@ -40,11 +42,11 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline py-2 mr-2 my-2 my-lg-0">
             <button type="button" class="btn btn-light border border-secondary p-2 mx-1"></button>
             <button type="button" class="btn btn-dark border border-dark p-2 mx-1"></button>
 
-            <button class="btn btn-secondary">Connection</button>
+            <button class="btn btn-secondary">Connexion</button>
         </form>
       </div>
     </nav>
@@ -77,60 +79,155 @@
 
     <section id="section-trois">
       <h1 class="text-center mt-5">Recent Products</h1>
+
       <div class="container">
         <div class="row mt-5">
           <div class="col-12 col-lg-4">
-            <img class="img-thumbnail" src="./public/images/products_mini/product-luxry-sofa.jpg" alt="">
-            <a href="">Luxury Sofa</a>
-            <p class="new-price">$600</p>
+            <div class="wrapper">
+            <img class="" src="./public/images/products_mini/product-luxry-sofa.jpg" alt="">
+            <div class="row w-100 m-0">
+              <div class="col-6 bg-dark">
+                <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+            </div>
+              <div class="col-6 bg-danger">            
+                <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+            </div>
+            </div>
           </div>
+          <a href="">Luxury Sofa</a>
+          <p class="new-price">$600</p>
+          </div>
+
           <div class="col-12 col-lg-4">
-            <img class="img-thumbnail" src="./public/images/products_mini/product-gloves.jpg" alt="">
+            <div class="wrapper">
+            <img class="" src="./public/images/products_mini/product-gloves.jpg" alt="">
+            <div class="row w-100 m-0">
+                <div class="col-6 bg-dark">
+                  <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+              </div>
+                <div class="col-6 bg-danger">            
+                  <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+              </div>
+              </div>
+            </div>
             <a href="">Leather Gloves</a>
-            <p><span class="old-price">$34.00</span><span class="new-price">$27.00</span></p>
+            <p><span class="sale text-white">Sale !</span><span class="old-price">$34.00</span><span class="new-price"> $27.00</span></p>
           </div>
+
           <div class="col-12 col-lg-4">
-            <img class="img-thumbnail" src="./public/images/products_mini/product-cups.jpg" alt="">
-            <a href="">Colorful Bowl</a>
-            <p class="new-price">$18.00</p>
+              <div class="wrapper">
+                  <img class="" src="./public/images/products_mini/product-cups.jpg" alt="">
+                  <div class="row w-100 m-0">
+                      <div class="col-6 bg-dark">
+                        <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                    </div>
+                      <div class="col-6 bg-danger">            
+                        <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                    </div>
+                    </div>
+                  </div>
+                  <a href="">Colorful Bowl</a>
+                  <p><span class="new-price"> $18.00</span></p>
           </div>
+          
         </div>
 
         <div class="row mt-5">
             <div class="col-12 col-lg-4">
-              <img class="img-thumbnail" src="./public/images/products_mini/product-bag.jpg" alt="">
-              <a href="">Women Bag</a>
-              <div class="">
-                <p><span class="old-price">$420.00</span><span class="new-price">$350</span></p>
-              </div>
+                <div class="wrapper">
+                    <img class="" src="./public/images/products_mini/product-bag.jpg" alt="">
+                    <div class="row w-100 m-0">
+                        <div class="col-6 bg-dark">
+                          <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                      </div>
+                        <div class="col-6 bg-danger">            
+                          <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                      </div>
+                      </div>
+                    </div>
+                    <a href="">Women Bag</a>
+                    <p><span class="sale text-white">Sale !</span><span class="old-price">$420.00</span><span class="new-price"> $350.00</span></p>
             </div>
+            
             <div class="col-12 col-lg-4">
-              <img class="img-thumbnail" src="./public/images/products_mini/product-tshitr.jpg" alt="">
-              <a href="">Minimal T-Shirt</a>
-              <p class="new-price">$15.00</p>
+                <div class="wrapper">
+                    <img class="" src="./public/images/products_mini/product-tshitr.jpg" alt="">
+                    <div class="row w-100 m-0">
+                        <div class="col-6 bg-dark">
+                          <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                      </div>
+                        <div class="col-6 bg-danger">            
+                          <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                      </div>
+                      </div>
+                    </div>
+                    <a href="">Minimal Tshirt</a>
+                    <p><span class="new-price"> $15.00</span></p>
             </div>
+
             <div class="col-12 col-lg-4">
-              <img class="img-thumbnail" src="./public/images/products_mini/product-plates.jpg" alt="">
-              <a href="">Plates Set</a>
-              <p class="new-price">$30.00</p>
+                <div class="wrapper">
+                    <img class="" src="./public/images/products_mini/product-plates.jpg" alt="">
+                    <div class="row w-100 m-0">
+                        <div class="col-6 bg-dark">
+                          <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                      </div>
+                        <div class="col-6 bg-danger">            
+                          <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                      </div>
+                      </div>
+                    </div>
+                    <a href="">Plates Set</a>
+                    <p><span class="new-price"> $30.00</span></p>
             </div>
           </div>
 
           <div class="row my-5">
               <div class="col-12 col-lg-4">
-                <img class="img-thumbnail" src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
-                <a href="">Modern Sofa</a>
-                <p class="new-price">$900</p>
+                 <div class="wrapper">
+                  <img class="" src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
+                  <div class="row w-100 m-0">
+                      <div class="col-6 bg-dark">
+                        <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                    </div>
+                      <div class="col-6 bg-danger">            
+                        <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                    </div>
+                    </div>
+                  </div>
+                  <a href="">Modern Sofa</a>
+                  <p><span class="new-price"> $900.00</span></p>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                 <div class="wrapper">
+                  <img class="" src="./public/images/products_mini/product-bed.jpg" alt="">
+                  <div class="row w-100 m-0">
+                      <div class="col-6 bg-dark">
+                        <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                    </div>
+                      <div class="col-6 bg-danger">            
+                        <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                    </div>
+                    </div>
+                  </div>
+                  <a href="">Bed Linen</a>
+                  <p><span class="new-price"> $79.00</span></p>
               </div>
               <div class="col-12 col-lg-4">
-                <img class="img-thumbnail" src="./public/images/products_mini/product-bed.jpg" alt="">
-                <a href="">Bed Linen</a>
-                <p class="new-price">$79.00</p>
-              </div>
-              <div class="col-12 col-lg-4">
-                <img class="img-thumbnail" src="./public/images/products_mini/product-shoes.jpg" alt="">
-                <a href="">Minimal Shoes</a>
-                <p class="new-price">$60.00</p>
+                 <div class="wrapper">
+                  <img class="" src="./public/images/products_mini/product-shoes.jpg" alt="">
+                  <div class="row w-100 m-0">
+                      <div class="col-6 bg-dark">
+                        <div class="modal-produit2"><p class="text-light text-center my-2"><i class="fas fa-eye"></i> View Details</p></div>
+                    </div>
+                      <div class="col-6 bg-danger">            
+                        <div class="modal-produit"><p class="text-light text-center my-2"><i class="fas fa-shopping-cart"></i>Add to cart</p></div>
+                    </div>
+                    </div>
+                  </div>
+                  <a href="">Minimal Shoes</a>
+                  <p><span class="new-price"> $60.00</span></p>
               </div>
             </div>
       </div>
@@ -280,6 +377,8 @@
     </footer>
     
     <script src="./src/js/index.js" type="module"></script>
+    <script src="./src/js/scroll.js" type="module"></script>
+    <script src="./src/js/fade.js" type="module"></script>
 
   </body>
 </html>
