@@ -5906,7 +5906,7 @@ footer p {
 }
 
 #modal-connexion {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -5916,5 +5916,10 @@ footer p {
 
 .hidden {
   overflow: hidden;
+}
+
+.modal-transition {
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
 }
 /*# sourceMappingURL=style.css.map */

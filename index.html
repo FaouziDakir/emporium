@@ -13,16 +13,23 @@
 <body>
 
   <div id="modal-connexion" class="d-none">
-      <div class="card">
+      <div class="card rounded modal-transition">
           <i class="fas fa-times" id="close-modal"></i>
-          <div class="card-body">
+          <div id="se-connecter" class="card-body">
             <form action="">
               <input type="text">
               <input type="password">
             </form>
-            <p>test</p>
-            <h1>test 2</h1>
+            <button id="inscription" class="btn btn-secondary">S'inscrire</button>
           </div>
+          <div id="sinscrire" class="card-body d-none">
+              <form action="">
+                <input type="text"> <br>
+                <input type="text"> <br>
+                <input type="password"> <br>
+                <input type="password">
+              </form>
+            </div>
         </div>
   </div>
 
