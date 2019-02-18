@@ -5893,6 +5893,9 @@ footer p {
   border-radius: 100%;
   min-height: 3.236em;
   min-width: 3.236em;
+  top: 10%;
+  -webkit-transform: translate(-70%, -20%);
+          transform: translate(-70%, -20%);
 }
 
 .sticky {
@@ -5900,5 +5903,14 @@ footer p {
   top: 0;
   width: 100%;
   z-index: 3;
+}
+
+#modal-connexion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
