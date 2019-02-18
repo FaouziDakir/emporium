@@ -5,7 +5,7 @@ let noir = document.getElementsByClassName('btn btn-dark')[0]
 let h1 = document.getElementsByTagName('h1')
 let a = document.querySelectorAll('#section-trois a')
 let aNav = document.querySelectorAll('#navbarSupportedContent a')
-let body = document.getElementsByTagName('body')[0]
+export let body = document.getElementsByTagName('body')[0]
 export let nav = document.getElementsByTagName('nav')[0]
 
 // FONCTION POUR PASSER AU NOIR
