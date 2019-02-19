@@ -8,33 +8,47 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/carousel.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
 
+<!-- MODALS DE CONNEXION ET D'INSCRIPTION -->
+<div id="fenetre" class="d-none flex-column justify-content-center align-items-center">
   <div id="modal-connexion" class="d-none">
-      <div class="card rounded modal-transition">
+      <div class="card rounded ">
           <i class="fas fa-times" id="close-modal"></i>
+          <!-- CONNEXION -->
           <div id="se-connecter" class="card-body">
             <form action="">
-              <input type="text">
-              <input type="password">
+              <h1 class="text-center">Connexion</h1>
+              <input type="text" class="form-control" placeholder="Pseudo"> <br>
+              <input type="password" class="form-control" placeholder="Mot de passe">
             </form>
-            <button id="inscription" class="btn btn-secondary">S'inscrire</button>
+            <button id="inscription" class="btn btn-secondary mt-3">S'inscrire</button>
+            <button id="" class="btn btn-secondary mt-3">Login</button>
           </div>
+          <!-- INSCRIPTION -->
           <div id="sinscrire" class="card-body d-none">
               <form action="">
-                <input type="text"> <br>
-                <input type="text"> <br>
-                <input type="password"> <br>
-                <input type="password">
+                <h1 class="text-center">Formulaire d'inscription</h1>
+                <input type="text" class="form-control" placeholder="Pseudo"> <br>
+                <input type="text" class="form-control" placeholder="E-mail"> <br>
+                <input type="password" class="form-control" placeholder="Mot de passe"> <br>
+                <input type="password" class="form-control" placeholder="Confirmer mot de passe">
               </form>
+              <button id="confirmation" class="btn btn-secondary mt-3">Envoyer</button>
             </div>
         </div>
   </div>
+</div>
 
-  <h1 class="text-center mt-5"><strong>emporium.</strong></h1>
+<!-- FOND NOIR POUR ASSOMBRIR LE SITE QUAND LES MODALS SONT LA -->
+<div id="fond-noir" class="d-none"></div>
 
+
+<!-- TITRE -->
+<h1 class="text-center mt-5"><strong>emporium.</strong></h1>
+
+<!-- NAVBAR -->
   <nav id="navbar" class="navbar navbar-expand navbar-light bg-white py-2">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav d-block d-md-flex mx-auto">
@@ -57,7 +71,7 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="form-inline py-2 mr-2 my-2 my-lg-0">
+        <div id="bouttons" class="form-inline py-2 mr-2 my-2 my-lg-0">
             <button type="button" class="btn btn-light border border-secondary p-2 mx-1"></button>
             <button type="button" class="btn btn-dark border border-dark p-2 mx-1"></button>
 
@@ -66,14 +80,16 @@
       </div>
     </nav>
 
+    <!-- SECTION UNE, paragraphe et image -->
     <section id="section-un">
       <div class="container">
-        <div class="row">
-          <div class="col-6 mt-5 pt-5">
-            <h2 class="text-danger">Shop at </h2><h2 class="display-1"><strong>emporium</strong></h2>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsam unde sapiente aliquid alias quo
-               cumque saepe delectus modi. Hic magnam vero nulla accusantium sit nemo? Natus rem dolore odit.</p>
-            <button type="button" class="btn btn-danger">Danger</button>
+        <div class="row mt-5 pt-5">
+          <div id="col-gauche" class="col-6 flex-column d-flex mt-5 pt-5">
+            <div class="d-block my-auto">
+              <h2 class="text-danger">Shop at </h2><h2 id="titre-section-un"><strong>emporium.</strong></h2>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsam unde sapiente aliquid.</p>
+              <button type="button" class="btn btn-danger rond">SALE ITEMS</button>
+            </div>
           </div>
           <div class="col-6">
             <img class='img-fluid' src="./public/images/slider-1.jpg" alt="">
@@ -82,6 +98,7 @@
       </div>
     </section>
 
+    <!-- SECTION DEUX, 3 images -->
     <section id="section-deux">
       <div class="container-fluid mt-5">
         <div class="row">
@@ -92,6 +109,7 @@
       </div>
     </section>
 
+    <!-- SECTION TROIS, 9 images (hovers) -->
     <section id="section-trois">
       <h1 class="text-center mt-5">Recent Products</h1>
 
@@ -248,13 +266,15 @@
       </div>
     </section>
 
+    <!-- SECTION 4, parallax -->
     <section id="section-quatre">
       <div id="parallax-content">
           <h1>Discover Thousands Of Great Products</h1>
-          <button type="button" class="btn btn-danger">LEARN MORE</button>
+          <button type="button" class="btn btn-danger rond">LEARN MORE</button>
       </div>
     </section>
 
+    <!-- SECTION 5, carousel -->
     <section id="section-cinq">
       <h1 class="text-center mt-5">Hot Fashion Products</h1>
       <div class="container">
@@ -320,6 +340,7 @@
       </div>
     </section>
 
+    <!-- SECTION 6, faux jumbotrons -->
     <section id="section-six">
       <div class="container-fluid">
           <div class="row mt-5 text-center">
@@ -354,6 +375,7 @@
       </div>
     </section>
 
+    <!-- SECTION 7, liens -->
     <section class="py-5" id="section-sept">
       <div class="container">
         <div class="row">
@@ -395,11 +417,12 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <p class="text-muted">COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</p>
     </footer>
     
-    <script src="./src/js/index.js" type="module"></script>
+    <script src="./src/js/couleur.js" type="module"></script>
     <script src="./src/js/scroll.js" type="module"></script>
     <script src="./src/js/fade.js" type="module"></script>
     <script src="./src/js/carousel.js" type="module"></script>

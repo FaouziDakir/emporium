@@ -1,4 +1,4 @@
-import {nav} from './index.js'
+import {nav} from './couleur.js'
 
 window.onscroll = function() {scroll()};
 

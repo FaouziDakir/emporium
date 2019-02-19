@@ -1,4 +1,6 @@
 import {carte} from './connexion.js'
+import {carte2} from './connexion.js'
+
 
 // CHANGEMENT DE COULEUR
 // VARIABLES GLOBALES
@@ -15,6 +17,7 @@ let bgNoir = () =>{
     body.classList.add('bg-noir')
     nav.classList.add('bg-noir')
     carte.classList.add('bg-noir')
+    carte2.classList.add('bg-noir')
 
     for(let i = 0; i<h1.length; i++){
         h1[i].classList.add('text-blanc')
@@ -34,6 +37,7 @@ let bgBlanc = () =>{
     body.classList.remove('bg-noir')
     nav.classList.remove('bg-noir')
     carte.classList.remove('bg-noir')
+    carte2.classList.remove('bg-noir')
 
     for(let i = 0; i<h1.length; i++){
         h1[i].classList.remove('text-blanc')
