@@ -6,8 +6,7 @@
 
 Site vitrine avec fonctionnalitées JavaScript pour changer de couleur (background du site), modals d'inscription, barre de navigation sticky et carousel. Responsivité correcte.
 
-Langages employés
----------------------------
+#### Languages utilisés : 
 
 - HTML
 - SASS
