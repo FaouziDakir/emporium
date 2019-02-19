@@ -49,3 +49,11 @@ Site vitrine avec fonctionnalitées JavaScript pour changer de couleur (backgrou
 }
 
 }
+
+```
+
+#### Préview : 
+
+![alt text](https://github.com/bricojack79/emporium/blob/master/public/images/img1.jpg "Préview 1")
+
+![alt text](https://github.com/bricojack79/emporium/blob/master/public/images/img1.jpg "Préview 2")
