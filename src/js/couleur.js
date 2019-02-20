@@ -1,5 +1,8 @@
 import {carte} from './connexion.js'
 import {carte2} from './connexion.js'
+import {toggler} from './scroll.js'
+import {burger} from './scroll.js'
+
 
 
 // CHANGEMENT DE COULEUR
@@ -18,6 +21,10 @@ let bgNoir = () =>{
     nav.classList.add('bg-noir')
     carte.classList.add('bg-noir')
     carte2.classList.add('bg-noir')
+    burger.classList.add('bg-noir')
+    toggler.classList.add('text-blanc')
+
+
 
     for(let i = 0; i<h1.length; i++){
         h1[i].classList.add('text-blanc')
@@ -38,6 +45,9 @@ let bgBlanc = () =>{
     nav.classList.remove('bg-noir')
     carte.classList.remove('bg-noir')
     carte2.classList.remove('bg-noir')
+    burger.classList.remove('bg-noir')
+    toggler.classList.remove('text-blanc')
+
 
     for(let i = 0; i<h1.length; i++){
         h1[i].classList.remove('text-blanc')

@@ -15,6 +15,10 @@ body
     transition-duration: 1s !important
 nav
     transition-duration: 1s !important
+#toggler
+    transition-duration: 1s !important
+    position: relative
+    z-index: 10000 !important
 
 #section-un
     background-color: #F3F3F3
@@ -25,6 +29,7 @@ nav
         position: absolute
         top: 0
         right: 0
+   
 
 @media (max-width: 576px)
     #section-un
@@ -34,12 +39,20 @@ nav
             font-size: 40px
         #titre-section-un
             font-size: 30px
-    nav
         a
             font-size: 12px
     #section-sept
         div
             border: none !important
+    #titre-principal
+        display: none
+    #titre-secondaire
+        display: none
+    #navbar-englobe
+        position: fixed
+        z-index: 3
+    #navbar
+        top: 79px
 
 #titre-section-un
     font-size: 85px
@@ -100,10 +113,9 @@ nav
     background-size: cover
     #parallax-content
         color: white
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%,-50%)
+        text-align: center
+        padding-top: 200px
+            
 
 #section-six
     p
@@ -157,22 +169,24 @@ footer
 .old-price
     color: #949494
     text-decoration: line-through
+    display: inline-block
 
 .new-price
     color: #bd584e
+    display: inline-block
 
 .sale
-    position: static
     display: inline-block
     vertical-align: middle
-    margin-right: 20px
     background-color: #bd584e
-    border-radius: 100%
-    min-height: 3.236em
-    min-width: 3.236em
+    border-radius: 50%
+    padding: 13px 5px
     top: 10%
-    transform: translate(-70%,-20%)
 
+.around
+    span
+        margin: 0 5px
+    
 .sticky 
   position: fixed
   top: 0
@@ -190,7 +204,7 @@ footer
     position: fixed
     width: 100%
     height: 100vh
-    z-index: 4
+    z-index: 5
 
 .rond
     border-radius: 20px
@@ -207,4 +221,16 @@ footer
     width: 100%
     height: 100vh
     top: 0
+    z-index: 4
+
+#navbar
+    position: relative
     z-index: 3
+
+#burger
+    position: fixed !important
+    width: 100%
+    z-index: 4
+    transition-duration: 1s !important
+    @media (min-width: 576px)
+        display: none

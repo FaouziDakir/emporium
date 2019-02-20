@@ -11,6 +11,8 @@
 </head>
 <body>
 
+
+  
 <!-- MODALS DE CONNEXION ET D'INSCRIPTION -->
 <div id="fenetre" class="d-none flex-column justify-content-center align-items-center">
   <div id="modal-connexion" class="d-none">
@@ -44,31 +46,43 @@
 <!-- FOND NOIR POUR ASSOMBRIR LE SITE QUAND LES MODALS SONT LA -->
 <div id="fond-noir" class="d-none"></div>
 
+<!-- BURGER -->
+<div id="burger" class="bg-white">
+    <i id="toggler" class="fas fa-bars"></i>
+    <h1 class="text-center"><strong>emporium.</strong></h1>
+</div>
+
+
+<div id="navbar-englobe" class="d-none d-md-block">
 
 <!-- TITRE -->
-<h1 class="text-center mt-5"><strong>emporium.</strong></h1>
+<h1 id="titre-principal" class="text-center mt-5"><strong>emporium.</strong></h1>
 
 <!-- NAVBAR -->
   <nav id="navbar" class="navbar navbar-expand navbar-light bg-white py-2">
+
+      <h1 id="titre-secondaire" class="text-center d-none pop"><strong>emporium.</strong></h1>
+
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav d-block d-md-flex mx-auto">
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" id="lien-home" href="#section-un">Home</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" id="lien-product" href="#section-deux">Product</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" id="lien-blog" href="#section-trois">Blog</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Elements</a>
+            <a class="nav-link" id="lien-elements" href="#section-quatre">Elements</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" id="lien-about" href="#section-cinq">About</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" id="lien-contact" href="#section-sept">Contact</a>
           </li>
         </ul>
         <div id="bouttons" class="form-inline py-2 mr-2 my-2 my-lg-0">
@@ -80,6 +94,10 @@
       </div>
     </nav>
 
+    
+  </div>
+
+
     <!-- SECTION UNE, paragraphe et image -->
     <section id="section-un">
       <div class="container">
@@ -88,7 +106,7 @@
             <div class="d-block my-auto">
               <h2 class="text-danger">Shop at </h2><h2 id="titre-section-un"><strong>emporium.</strong></h2>
               <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ipsam unde sapiente aliquid.</p>
-              <button type="button" class="btn btn-danger rond">SALE ITEMS</button>
+              <button type="button" class="btn btn-danger rond mb-5">SALE ITEMS</button>
             </div>
           </div>
           <div class="col-6">
@@ -144,7 +162,7 @@
               </div>
             </div>
             <a href="">Leather Gloves</a>
-            <p><span class="sale text-white">Sale !</span><span class="old-price">$34.00</span><span class="new-price"> $27.00</span></p>
+            <p class="text-center around"><span class="sale text-white">Sale !</span><span class="old-price">$34.00</span><span class="new-price"> $27.00</span></p>
           </div>
 
           <div class="col-12 col-lg-4">
@@ -179,7 +197,7 @@
                       </div>
                     </div>
                     <a href="">Women Bag</a>
-                    <p><span class="sale text-white">Sale !</span><span class="old-price">$420.00</span><span class="new-price"> $350.00</span></p>
+                    <p class="text-center"><span class="sale text-white">Sale !</span><span class="old-price">$420.00</span><span class="new-price"> $350.00</span></p>
             </div>
             
             <div class="col-12 col-lg-4">
@@ -427,6 +445,7 @@
     <script src="./src/js/fade.js" type="module"></script>
     <script src="./src/js/carousel.js" type="module"></script>
     <script src="./src/js/connexion.js" type="module"></script>
+    <script src="./src/js/burger.js" type="module"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
